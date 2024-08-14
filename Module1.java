@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.Color;
 
 public class Module1 extends Controllee
 {
@@ -8,10 +9,10 @@ public class Module1 extends Controllee
 	public Module1()
 	{
 		super();
-		this.setLayout(null);
+		this.setBackground(new Color(255,0,0));
 		
 		currentVal = 0;
-		counterBox = new JLabel();
+		counterBox = new JLabel("bich");
 		this.add(counterBox);
 		update();
 	}
