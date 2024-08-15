@@ -1,6 +1,7 @@
 import javax.swing.*;
 
-abstract class Controllable extends JPanel
+//Classes that inherits this can be controlled by JButtons
+abstract class Controllable extends Module
 {
 	abstract void onButtonClick();
 }

@@ -12,12 +12,15 @@ public class Interface implements ActionListener
 	{				
 		JButton b1 = new JButton("Click!");
 		Module1 m1 = new Module1();
+		Module2 m2 = new Module2();
 		link(b1,m1);
+		m1.addNotifiable(m2);
 		
 		b1.addActionListener(this);
 		
 		w.addComponent(b1);
 		w.addComponent(m1);
+		w.addComponent(m2);
 		w.refresh();
 	}
 	
