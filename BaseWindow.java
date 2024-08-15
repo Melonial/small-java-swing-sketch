@@ -1,17 +1,17 @@
 import javax.swing.*;
 
-public class BaseWindow
+public class BaseWindow extends JFrame
 {	
-	private JFrame f = new JFrame();
 	private JPanel p = new JPanel();
 	
 	public BaseWindow()
 	{
-		f.setTitle("Test Program");
-		f.setSize(200, 150);
-		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		f.add(p);
-		f.setVisible(true);
+		super();
+		this.setTitle("Test Program");
+		this.setSize(300, 200);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.add(p);
+		this.setVisible(true);
 	}
 	
 	public void addComponent(JComponent a)
@@ -21,7 +21,7 @@ public class BaseWindow
 	
 	public void refresh()
 	{
-		f.remove(p);
-		f.add(p);
+		this.remove(p);
+		this.add(p);
 	}
 }
