@@ -2,7 +2,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
 
-public class Controller implements ActionListener
+public class Interface implements ActionListener
 {
 	private BaseWindow w = new BaseWindow();
 	private Module1 counter = new Module1();

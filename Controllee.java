@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-abstract class Controllee extends JPanel
+abstract class Controllable extends JPanel
 {
 	abstract void onButtonClick();
 }

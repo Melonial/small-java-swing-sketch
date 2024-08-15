@@ -1,9 +1,9 @@
 import javax.swing.*;
 
-public class main
+public class Driver
 {	
 	public static void main(String[] args)
 	{
-		Controller c = new Controller();
+		Interface c = new Interface();
 	}
 }
