@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.Color;
 
-public class Module1 extends Controllee
+public class Module1 extends Controllable
 {
 	private JLabel counterBox;
 	private int currentVal;

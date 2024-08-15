@@ -6,7 +6,7 @@ public class Interface implements ActionListener
 {
 	private BaseWindow w = new BaseWindow();
 	private Module1 counter = new Module1();
-	private Map<JButton, Controllee> dict = new HashMap<>();
+	private Map<JButton, Controllable> dict = new HashMap<>();
 	
 	public Controller()
 	{				
@@ -21,7 +21,7 @@ public class Interface implements ActionListener
 	}
 	
 	//Links together a button with a chosen module (must extend Controllee class)
-	public void link(JButton b, Controllee c)
+	public void link(JButton b, Controllable c)
 	{
 		dict.put(b,c);
 	}
