@@ -8,7 +8,7 @@ public class Interface implements ActionListener
 	private Module1 counter = new Module1();
 	private Map<JButton, Controllable> dict = new HashMap<>();
 	
-	public Controller()
+	public Interface()
 	{				
 		JButton b1 = new JButton("Click!");
 		Module1 m1 = new Module1();
